@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - GOMYBAR</title>
+    <style>
+        :root {
+            --blanco: #ffffff;
+            --tema-primario: #ff5722;
+            --tema-oscuro: #bf360c;
+            --gris-claro: #fcf4f2;
+            --texto-oscuro: #212121;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--gris-claro); margin: 0; padding: 0; }
+        header { background: linear-gradient(135deg, #4e0000, #bf360c); color: var(--blanco); text-align: center; padding: 2rem 1rem; border-bottom: 3px solid #ffeb3b; }
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; }
+        
+        .categoria { margin-bottom: 40px; }
+        .categoria-titulo { color: var(--tema-oscuro); text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px; }
+        
+        .grid-fotos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .foto-card { background: var(--blanco); padding: 15px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center; border-bottom: 4px solid var(--tema-primario); }
+        .foto-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; }
+        .foto-card:hover img { transform: scale(1.05); }
+        .foto-card p { font-weight: bold; margin-top: 15px; color: var(--texto-oscuro); font-size: 1.1rem; }
+
+        .btn-volver { display: block; width: 200px; margin: 40px auto; text-align: center; background: var(--tema-oscuro); color: white; padding: 15px; text-decoration: none; border-radius: 25px; font-weight: bold; text-transform: uppercase; }
+        .btn-volver:hover { background: var(--tema-primario); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NUESTRO CATÁLOGO</h1>
+        <p>Selección especial de sabor</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Preparaciones de gomitas -->
+        <div class="categoria">
+            <h2 class="categoria-titulo">Preparaciones</h2>
+            <div class="grid-fotos">
+                <div class="foto-card"><img src="Empanizadas.jpeg" alt="Empanizadas"><p>Gomitas Empanizadas</p></div>
+                <div class="foto-card"><img src="Enchiladas.jpeg" alt="Enchiladas"><p>Gomitas Enchiladas</p></div>
+            </div>
+        </div>
+
+        <!-- Tipos de gomitas -->
+        <div class="categoria">
+            <h2 class="categoria-titulo">Variedad de Gomitas</h2>
+            <div class="grid-fotos">
+                <div class="foto-card"><img src="Tiburones.png" alt="Tiburones"><p>Tiburones</p></div>
+                <div class="foto-card"><img src="Duraznos.png" alt="Duraznos"><p>Duraznos</p></div>
+                <div class="foto-card"><img src="Frutas.png" alt="Frutas"><p>Mix de Frutas</p></div>
+            </div>
+        </div>
+
+        <!-- Gomiboings -->
+        <div class="categoria">
+            <h2 class="categoria-titulo">Gomiboings</h2>
+            <div class="grid-fotos">
+                <div class="foto-card"><img src="Gomiboing.png" alt="Gomiboing"><p>Gomiboing Clásico</p></div>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+    </div>
+</body>
+</html>
