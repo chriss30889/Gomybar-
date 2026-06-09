@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - GOMYBAR</title>
+    <style>
+        :root {
+            --blanco: #ffffff;
+            --texto-oscuro: #212121;
+            --gris-claro: #fcf4f2; 
+            --tema-primario: #ff5722;
+            --tema-oscuro: #bf360c;
+            --tema-fondo: #fbe9e7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--gris-claro);
+            color: var(--texto-oscuro);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4e0000, #bf360c);
+            color: var(--blanco);
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 3px solid #ffeb3b;
+        }
+
+        .container { max-width: 650px; margin: 30px auto; padding: 20px; }
+
+        .historia-card {
+            background-color: var(--blanco);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 10px solid var(--tema-primario);
+        }
+
+        h2 { color: var(--tema-oscuro); text-align: center; text-transform: uppercase; }
+
+        p { text-align: justify; font-size: 1.1rem; }
+
+        .btn-volver {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            text-align: center;
+            background: var(--tema-oscuro);
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn-volver:hover { background: var(--tema-primario); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EL ORIGEN DEL FUEGO</h1>
+    </header>
+
+    <div class="container">
+        <div class="historia-card">
+            <h2>La Leyenda de Gomybar</h2>
+            <p>Cuenta la leyenda que en los días de calor más intenso sobre las tierras de Cotaxtla, cuando el sol castigaba con fuerza y el estudio parecía una tarea titánica, un grupo de estudiantes buscaba un remedio que no solo refrescara el cuerpo, sino que encendiera el espíritu.</p>
+            <p>Se dice que en un momento de inspiración, bajo un cielo naranja al atardecer, ocurrió el encuentro perfecto: la frescura gélida de un Boing congelado se fusionó con la intensidad volcánica del chamoy y la alquimia de las gomitas. No fue un accidente, fue un destino.</p>
+            <p>En ese preciso instante, nació el primer <strong>Gomiboing</strong>. Al probarlo, el cansancio se desvaneció y una energía renovada —lo que ahora llamamos el "Fuego del Dragón"— recorrió sus venas. Así, Gomybar dejó de ser solo un proyecto escolar para convertirse en una misión: llevar esa chispa de sabor a cada estudiante que necesite un respiro en su día a día.</p>
+            <p>Hoy, seguimos forjando pedidos, manteniendo viva la flama y refrescando a quienes se atreven a probar el verdadero sabor del estudio.</p>
+        </div>
+
+        <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+    </div>
+
+</body>
+</html>
