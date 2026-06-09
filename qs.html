@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes somos? - GOMYBAR</title>
+    <style>
+        :root {
+            --blanco: #ffffff;
+            --texto-oscuro: #212121;
+            --gris-claro: #fcf4f2; 
+            --gris-borde: #e0e0e0;
+            --tema-primario: #ff5722;
+            --tema-secundario: #ffeb3b;
+            --tema-oscuro: #bf360c;
+            --tema-fondo: #fbe9e7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--gris-claro);
+            color: var(--texto-oscuro);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4e0000, #bf360c, #ff5722, #ffeb3b);
+            background-size: 200% 200%;
+            color: var(--blanco);
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 3px solid #ffeb3b;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container { max-width: 650px; margin: 30px auto; padding: 0 20px; }
+
+        .equipo-card {
+            background-color: var(--blanco);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 10px solid var(--tema-primario);
+            margin-bottom: 30px;
+        }
+
+        h2 { color: var(--tema-oscuro); text-align: center; text-transform: uppercase; margin-top: 0; }
+
+        .lista-equipo {
+            list-style: none;
+            padding: 0;
+        }
+
+        .miembro-item {
+            background-color: var(--tema-fondo);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border-left: 5px solid var(--tema-primario);
+        }
+
+        .miembro-item h3 {
+            color: var(--tema-oscuro);
+            margin: 0 0 5px 0;
+            font-size: 1.2rem;
+        }
+
+        .miembro-item p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .btn-volver {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            text-align: center;
+            background: var(--tema-oscuro);
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .btn-volver:hover { 
+            background: var(--tema-primario); 
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LA TRIBU GOMYBAR</h1>
+    </header>
+
+    <div class="container">
+        <div class="equipo-card">
+            <h2>El Equipo detrás del Fuego</h2>
+            <p>Somos el motor detrás de Gomybar, un grupo de estudiantes del Telebachillerato Cotaxtla unidos por la innovación, el esfuerzo y las ganas de refrescar tu día.</p>
+            
+            <ul class="lista-equipo">
+                <li class="miembro-item">
+                    <h3>Christopher Aguilar Ramírez</h3>
+                    <p>Cofundador y estratega técnico. El arquitecto detrás de nuestros sistemas y la logística del sabor.</p>
+                </li>
+                <li class="miembro-item">
+                    <h3>Luz Yaretzi</h3>
+                    <p>Creativa y pilar operativo, asegurando que cada detalle en nuestro producto final sea perfecto.</p>
+                </li>
+                <li class="miembro-item">
+                    <h3>Estefany (Fanny)</h3>
+                    <p>Coordinadora de calidad, esencial para mantener nuestra esencia y atención al cliente.</p>
+                </li>
+                <li class="miembro-item">
+                    <h3>María del Carmen</h3>
+                    <p>Administradora y visionaria, clave para que Gomybar siga creciendo con orden y estilo.</p>
+                </li>
+                <li class="miembro-item">
+                    <h3>Cesar Gabriel & Ronaldo</h3>
+                    <p>Nuestros apoyos por excelencia. Son el alma creativa del equipo; siempre listos para lo que sea y maestros en aportar ideas innovadoras que llevan a Gomybar al siguiente nivel.</p>
+                </li>
+            </ul>
+
+            <p style="text-align: center; font-weight: bold; margin-top: 20px;">¡Gracias por ser parte de nuestra evolución!</p>
+        </div>
+
+        <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+    </div>
+
+</body>
+</html>

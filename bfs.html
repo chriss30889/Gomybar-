@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios - GOMYBAR</title>
+    <style>
+        :root {
+            --blanco: #ffffff;
+            --texto-oscuro: #212121;
+            --gris-claro: #fcf4f2; 
+            --tema-primario: #ff5722;
+            --tema-oscuro: #bf360c;
+            --tema-fondo: #fbe9e7;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--gris-claro); color: var(--texto-oscuro); margin: 0; padding: 0; line-height: 1.6; }
+
+        header { background: linear-gradient(135deg, #4e0000, #bf360c); color: var(--blanco); text-align: center; padding: 3rem 1rem; border-bottom: 3px solid #ffeb3b; }
+        .container { max-width: 650px; margin: 30px auto; padding: 0 20px; }
+
+        .beneficio-card {
+            background-color: var(--blanco);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 8px solid var(--tema-primario);
+            transition: transform 0.3s;
+        }
+        .beneficio-card:hover { transform: scale(1.02); }
+        .beneficio-card h3 { color: var(--tema-oscuro); margin-top: 0; }
+
+        .btn-volver {
+            display: block; width: 200px; margin: 30px auto; text-align: center; background: var(--tema-oscuro); 
+            color: white; padding: 15px; text-decoration: none; border-radius: 25px; font-weight: bold; text-transform: uppercase;
+        }
+        .btn-volver:hover { background: var(--tema-primario); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>¿POR QUÉ GOMYBAR?</h1>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; color: var(--tema-oscuro);">Ventajas de elegirnos</h2>
+
+        <div class="beneficio-card">
+            <h3>🔥 Calidad con Fuego</h3>
+            <p>Nuestros ingredientes son seleccionados para ofrecerte esa mezcla explosiva de sabor y frescura que no encontrarás en ningún otro lugar.</p>
+        </div>
+
+        <div class="beneficio-card">
+            <h3>⚡ Rapidez Estudiantil</h3>
+            <p>Sabemos que tu tiempo es oro entre clase y clase. Por eso, forjamos tu pedido para que esté listo cuando más lo necesitas.</p>
+        </div>
+
+        <div class="beneficio-card">
+            <h3>🐉 Experiencia Dracónica</h3>
+            <p>No solo vendemos snacks, ofrecemos una experiencia completa. ¿Buscas el descuento del Huevo de Dragón? ¡Mantente atento a nuestra página!</p>
+        </div>
+
+        <div class="beneficio-card">
+            <h3>😊 Actitud al 100%</h3>
+            <p>Atendemos con la mejor energía, porque estamos aquí para hacer que tus horas de estudio sean mucho más llevaderas y divertidas.</p>
+        </div>
+
+        <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+    </div>
+
+</body>
+</html>

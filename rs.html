@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales - GOMYBAR</title>
+    <style>
+        :root {
+            --blanco: #ffffff;
+            --tema-primario: #ff5722;
+            --tema-oscuro: #bf360c;
+            --gris-claro: #fcf4f2;
+            --texto-oscuro: #212121;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--gris-claro); color: var(--texto-oscuro); margin: 0; padding: 0; }
+
+        header { background: linear-gradient(135deg, #4e0000, #bf360c); color: var(--blanco); text-align: center; padding: 3rem 1rem; border-bottom: 3px solid #ffeb3b; }
+        .container { max-width: 650px; margin: 30px auto; padding: 0 20px; text-align: center; }
+
+        .red-card {
+            background-color: var(--blanco);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-decoration: none;
+            display: block;
+            color: var(--texto-oscuro);
+            border: 2px solid var(--tema-primario);
+            transition: transform 0.3s, background 0.3s;
+        }
+        .red-card:hover { transform: scale(1.03); background-color: var(--gris-claro); }
+        .red-card h3 { color: var(--tema-oscuro); margin: 0 0 10px 0; font-size: 1.4rem; }
+
+        .btn-volver {
+            display: block; width: 200px; margin: 30px auto; text-align: center; background: var(--tema-oscuro); 
+            color: white; padding: 15px; text-decoration: none; border-radius: 25px; font-weight: bold; text-transform: uppercase;
+        }
+        .btn-volver:hover { background: var(--tema-primario); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CONÉCTATE CON GOMYBAR</h1>
+    </header>
+
+    <div class="container">
+        <p>¡No te pierdas de nada! Síguenos para ver los videos más épicos y las novedades del sabor.</p>
+
+        <a href="https://wa.me/522293379112" class="red-card">
+            <h3>WhatsApp</h3>
+            <p>229 337 9112 - Haz tu pedido directo</p>
+        </a>
+
+        <a href="https://www.instagram.com/gomy.bar" class="red-card" target="_blank">
+            <h3>Instagram</h3>
+            <p>@gomy.bar</p>
+        </a>
+
+        <a href="https://www.tiktok.com/@zenku246" class="red-card" target="_blank">
+            <h3>TikTok</h3>
+            <p>@zenku246</p>
+        </a>
+
+        <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+    </div>
+
+</body>
+</html>
